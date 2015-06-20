@@ -81,8 +81,10 @@ public class MainActivityFragment extends Fragment {
             {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
-                i.putExtra(Intent.EXTRA_TEXT,"Share the love");
-                startActivity(i.createChooser(i, "Share the love"));
+                Intent intent = new Intent(Intent.ACTION_CHOOSER);
+                intent.putExtra(Intent.EXTRA_TITLE, "Share The Love!");
+                intent.putExtra(Intent.EXTRA_INTENT, i);
+                startActivity(intent);
             }
         });
 
