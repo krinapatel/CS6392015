@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment"
+    android:orientation="vertical"
+    android:background="#ff8fcdff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:text="Amount in dollars"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Dollars"
+        android:inputType="numberDecimal"
+        android:text="1"
+        android:singleLine="true"
+        android:textColor="#e71f050c"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:fontFamily="MS Comic Sans"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="calculate()"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:text="Amount in Francs CFA is"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#e71f050c"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:fontFamily="MS Comic Sans"
+        android:textAlignment="center"
+        android:textIsSelectable="true"
+        android:text="586.84"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp" />
+
+</RelativeLayout>
